@@ -2,7 +2,7 @@
     "name": "aluno/projeto-php",
     "autoload": {
         "psr-4": {
-            "Aluno\\ProjetoPhp\\": "src/"
+            "Aluno\\ProjetoPHP\\ProjetoPHP": "src/"
         }
     },
     "authors": [

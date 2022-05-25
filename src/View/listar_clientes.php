@@ -11,44 +11,22 @@
     <title>Inserir Cliente</title>
   </head>
   <body>
-    <div class="container">
-    <h1>Inserir Cliente</h1>
+      <h1>Clientes</h1>
+      
+      <php require_once "barra_navegacao.php"; ?>
+          <div class="container">
 
-    <form action="/cliente/inserir" method="post">
-        <div class="row">
-            <div class="col-5">
-                <label for="nome" class="label-control">
-                    Informe o nome:
-                </label>
-                <input type="text" class="form-control"
-                        name="nome" id="nome"/>
-            </div>
-            <div class="col-5">
-                <label for="email" class="label-control">
-                    Informe o email:
-                </label>
-                <input type="text" class="form-control"
-                        name="email" id="email"/>
-            </div>
-            <div class="col-2">
-                <label for="idade" class="label-control">
-                    Informe a idade:
-                </label>
-                <input type="number" class="form-control"
-                        name="idade" id="idade"/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col mt-5">
-                <button type="submit" 
-                        class="btn btn-primary">
-                    Enviar
-                    </button>
-            </div>
-        </div>
+                <div class="alert alert-success" role="alert">
+                Registro Inserido com sucesso!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                Erro ao inserir o registro!
+                </div>
+          </div>
+    
 
-    </form>
-    </div>
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
