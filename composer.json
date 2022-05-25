@@ -1,14 +1,14 @@
 {
-    "name": "aluno/projeto-php",
+    "name": "aluno/projeto",
     "autoload": {
         "psr-4": {
-            "Aluno\\ProjetoPHP\\ProjetoPHP": "src/"
+            "Aluno\\Projeto\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Vanessa Borges",
-            "email": "vanessa.borges2@fatec.sp.gov.br"
+            "name": "Gabriel Goncalves",
+            "email": "gabriel.barros10@fatec.sp.gov.br"
         }
     ],
     "require": {}
