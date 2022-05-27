@@ -11,6 +11,7 @@
     <title>Inserir Cliente</title>
   </head>
   <body>
+    <?php require_once "barra_navegação.php"; ?>
     <div class="container">
     <h1>Inserir Cliente</h1>
 
