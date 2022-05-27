@@ -1,6 +1,6 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Model\DAO;
+namespace Aluno\ProjetoPHP\Model\DAO;
 
 use PDO;
 

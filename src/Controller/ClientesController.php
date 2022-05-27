@@ -1,6 +1,6 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Controller;
+namespace Aluno\ProjetoPHP\Controller;
 
 use Aluno\ProjetoPhp\Model\DAO\ClientesDAO;
 use Aluno\ProjetoPhp\Model\Entity\Clientes;
