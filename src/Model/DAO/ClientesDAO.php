@@ -1,8 +1,8 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Model\DAO;
+namespace Aluno\ProjetoPHP\Model\DAO;
 
-use Aluno\ProjetoPhp\Model\Entity\Clientes;
+use Aluno\ProjetoPHP\Model\Entity\Clientes;
 
 class ClientesDAO{
 
