@@ -11,22 +11,59 @@
     <title>Inserir Cliente</title>
   </head>
   <body>
+      <?php require_once "barra_navegacao.php"; ?>
+      <div class="container">
       <h1>Clientes</h1>
-      
-      <php require_once "barra_navegacao.php"; ?>
-          <div class="container">
 
-                <div class="alert alert-success" role="alert">
-                Registro Inserido com sucesso!
-                </div>
-                <div class="alert alert-danger" role="alert">
-                Erro ao inserir o registro!
-                </div>
-          </div>
-    
+      <?php
+        if (isset($resposta)){
+          if ($resposta){
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                    Registro inserido com sucesso!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>';
+          } else {
+              echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      Erro ao inserir o registro!
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>';
+          }
+        }
+      ?>
 
 
 
+      <table class="table table-hover">
+          <thead>
+              <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              </tr>
+              <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              </tr>
+              <tr>
+              <t h scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+              </tr>
+          </tbody>
+          </table>
+
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
