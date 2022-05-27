@@ -10,7 +10,7 @@ $path = $_SERVER["PATH_INFO"];
 
 //Instanciar classe router
 
-$router = new \Aluno\Projeto\Router($method, $path);
+$router = new \Aluno\ProjetoPHP\Router($method, $path);
 
 //Adicionar as rotas válidas abaixo
 

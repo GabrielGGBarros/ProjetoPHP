@@ -11,6 +11,10 @@ class ClientesController{
         require_once "../src/View/inserir_cliente.php";
     }
 
+    public static function abrirListarClientes(){
+        require_once "../src/View/listar_cliente.php";
+    }
+
     public static function inserirCliente(){
         $cliente = new Clientes();
         $cliente->setEmail($_POST['email']);
@@ -18,10 +22,11 @@ class ClientesController{
         $cliente->setNome($_POST['nome']);
         $dao = new ClientesDAO();
         if ($dao->inserir($cliente)){
-            return "Inserido com sucesso!";
+            $resposta = true;
         } else {
-            return "Erro ao inserir";
+            $resposta = false;
         }
+        require_once "..src/View/listar_clientes.php";
     }
 
 }
