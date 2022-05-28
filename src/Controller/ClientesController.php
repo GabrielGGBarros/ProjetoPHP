@@ -7,11 +7,19 @@ use Aluno\ProjetoPhp\Model\Entity\Clientes;
 
 class ClientesController{
 
+    //private ClientesDAO $dao
+
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_cliente.php";
     }
 
-    public static function abrirListarClientes(){
+    public static function abrirFormularioAlterar(){
+        $dao = new ClientesDAO();
+        $resultado = $dao->consultar();
+        require_once "../src/View/inserir_clientes.php";
+    }
+
+    public static function abrirListaClientes(){
         require_once "../src/View/listar_cliente.php";
     }
 
@@ -26,7 +34,7 @@ class ClientesController{
         } else {
             $resposta = false;
         }
-        require_once "..src/View/listar_clientes.php";
+        ClientesController::abrirListaClientes();
     }
 
 }
