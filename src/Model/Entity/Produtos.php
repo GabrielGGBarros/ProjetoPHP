@@ -34,10 +34,10 @@ class Produtos{
     }
 
     public function getValor(){
-        return $this->idade;
+        return $this->valor;
     }
 
-    public function setIdade($valor){
+    public function setValor($valor){
         $this->valor = $valor;
     }
 
