@@ -1,6 +1,6 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Model\Entity;
+namespace Aluno\ProjetoPHP\Model\Entity;
 
 class Clientes{
 
