@@ -31,8 +31,6 @@
         }
       ?>
 
-
-
       <table class="table table-hover">
           <thead>
               <tr>
@@ -47,7 +45,7 @@
                 <tr>
                 <th scope="row"><?= $linha['id'] ?></th>
                 <td><?= $linha['nome'] ?> </td>
-                <td><?= $linha['E-mail'] ?> </td>
+                <td><?= $linha['email'] ?> </td>
                 <td> <a class="btn btn-warning">Alterar</a> 
                 <a class="btn btn-danger">Excluir</a> </td>
                 </tr>
