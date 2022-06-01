@@ -54,6 +54,14 @@ class ClientesController{
         ClientesController::abrirListaClientes();
     }
 
-    
+    public static function excluirCliente($params){
+        $dao = new ClientesDAO();
+        if ($dao->excluir($params[1])){
+            $resposta = true;
+        }else{
+            $resposta = false;
+        }
+        ClientesController::abrirListaClientes();
+    }
 
 }
