@@ -22,7 +22,7 @@ class ClientesController{
     public static function abrirListaClientes(){
         $dao = new ClientesDAO();
         $resultado = $dao->consultar();
-        require_once "../src/View/listar_cliente.php";
+        require_once "../src/View/listar_clientes.php";
     }
 
     public static function inserirCliente(){
