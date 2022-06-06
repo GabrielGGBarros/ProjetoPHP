@@ -28,7 +28,7 @@ class ProdutosController{
     public static function inserirCliente(){
         $produto = new Produtos();
         $produto->setId($_POST['id']);
-        $produto->setDescricao=($_POST['descricao']);
+        $produto->setDescricao($_POST['descricao']);
         $produto->setValor($_POST['valor']);
         $produto->setNome($_POST['nome']);
         $dao = new ProdutosDAO();
@@ -37,22 +37,22 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ClientesController::abrirListaClientes();
+        ProdutosController::abrirListaProdutos();
     }
 
-    public static function editarCliente($params){
-        $cliente = new Produtos();
-        $cliente->setEmail($_POST['email']);
-        $cliente->setIdade($_POST['idade']);
-        $cliente->setNome($_POST['nome']);
-        $cliente->setId($params[1]);
+    public static function editarProduto($params){
+        $produto = new Produtos();
+        $produto->setId($_POST['id']);
+        $produto->setDescricao($_POST['descricao']);
+        $produto->setValor($_POST['valor']);
+        $produto->setNome($_POST['nome']);
         $dao = new ProdutosDAO();
-        if ($dao->alterar($cliente)){
+        if ($dao->alterar($produto)){
             $resposta = true;
         }else{
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
     public static function excluirProduto($params){
@@ -62,7 +62,7 @@ class ProdutosController{
         }else{
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
 }
