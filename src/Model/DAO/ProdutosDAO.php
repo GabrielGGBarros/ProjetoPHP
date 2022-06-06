@@ -12,8 +12,8 @@ class ClientesDAO{
             $p = Conexao::conectar()->prepare($sql);
             $p->bindValue(":id", $c->getId());
             $p->bindValue(":nome", $c->getNome());
-            $p->bindValue(":email", $c->getDescricao());
-            $p->bindValue(":idade", $c->getValor());
+            $p->bindValue(":descricao", $c->getDescricao());
+            $p->bindValue(":valor", $c->getValor());
             return $p->execute();
         } catch(\Exception $e){
             return false;
