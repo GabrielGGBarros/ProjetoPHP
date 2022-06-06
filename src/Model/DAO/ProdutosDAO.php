@@ -4,11 +4,11 @@ namespace Aluno\ProjetoPHP\Model\DAO;
 
 use Aluno\ProjetoPHP\Model\Entity\Produtos;
 
-class ClientesDAO{
+class ProdutosDAO{
 
     public function inserir(Produtos $c){
         try{
-            $sql = "INSERT INTO `produtos`('id', `nome`, `descricao`, `valor`) VALUES (:id, :nome, :descricao, :valor)";
+            $sql = "INSERT INTO `produtos`(`id`, `nome`, `descricao`, `valor`) VALUES (:id, :nome, :descricao, :valor)";
             $p = Conexao::conectar()->prepare($sql);
             $p->bindValue(":id", $c->getId());
             $p->bindValue(":nome", $c->getNome());
