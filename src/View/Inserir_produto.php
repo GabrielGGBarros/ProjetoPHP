@@ -17,7 +17,7 @@
 
     <form action="/produto/inserir" method="post">
         <div class="row">
-        <div class="col-5">
+            <div class="col-5">
                 <label for="id" class="label-control">
                     Informe o id:
                 </label>
