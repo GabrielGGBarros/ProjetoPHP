@@ -13,7 +13,7 @@
   <body>
     <?php require_once "barra_navegacao.php"; ?>
     <div class="container">
-    <h1>Inserir ProdutoCliente</h1>
+    <h1>Inserir Produtos</h1>
 
     <form action="/produto/inserir" method="post">
         <div class="row">

@@ -11,6 +11,21 @@
               Clientes
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/cliente/novo">
+              Novo Cliente
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/produtos">
+              Produtos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/produto/novo">
+              Novo produto
+          </a>
+        </li>
       </ul>
     </div>
   </div>
