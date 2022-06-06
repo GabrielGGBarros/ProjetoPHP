@@ -25,7 +25,7 @@ class ProdutosController{
         require_once "../src/View/listar_produtos.php";
     }
 
-    public static function inserirCliente(){
+    public static function inserirProduto(){
         $produto = new Produtos();
         $produto->setId($_POST['id']);
         $produto->setDescricao($_POST['descricao']);
